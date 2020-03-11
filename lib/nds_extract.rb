@@ -41,10 +41,11 @@ def total_gross(source)
   # Should use methods:
   # 1. directors_totals: returns a Hash of { dir_name => gross }
   # 2. list_of_directors: names provides an Array of directors names (use
+  i = 0
   total = 0
   dir_totals = directors_totals(source)
   ary_dir = list_of_directors(source)
-  i = 0
+
   while i < ary_dir.count do
     total += dir_totals[ary_dir[i]][:worldwide_gross]
     i += 1
