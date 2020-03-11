@@ -43,6 +43,10 @@ def total_gross(source)
   # 2. list_of_directors: names provides an Array of directors names (use
   dir_totals = directors_totals(source)
   ary_dir = list_of_directors(source)
+  i = 0 
+  while i < ary_dir.count do 
+    dir_totals[ary_dir][:worldwide_gross]
+    i += 1
 
   # Visit each key (i.e. director name), look up the value in the hash
   # returned by directors_totals, and add it to a running total. When done,
