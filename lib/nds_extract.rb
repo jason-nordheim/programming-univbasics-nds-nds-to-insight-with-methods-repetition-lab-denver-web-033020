@@ -47,7 +47,8 @@ def total_gross(source)
   ary_dir = list_of_directors(source)
 
   while i < ary_dir.count do
-    total += dir_totals[ary_dir[i]][:worldwide_gross]
+    dir = ary_dir[i]
+    total += dir_totals[dir]
     i += 1
   end
   # Visit each key (i.e. director name), look up the value in the hash
